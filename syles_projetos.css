@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10%;
+}
+
+
+.apresentacao__conteudo {
+    display: flex;
+    gap: 25%;
+    align-items:center;
+}
+
+.apresentacao__conteudo_projeto{
+    width: 615px;
+    display: flex;
+    gap: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.apresentacao__conteudo__titulo_projeto {
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+    color: rgb(175, 51, 51);
+}
+
+.apresentacao__conteudo__titulo_jogo{
+    display: flex;
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+    color: #036942;
+    
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+    color: #036942;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.sub_titulo {
+    font-size: 20px;
+    font-family: 'krona one', sans-serif;
+    font-weight: 400;
+}
+
+.apresentacao__links__link {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px ridge #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 18px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__link:hover {
+    background-color: rgb(61, 59, 61);
+    border: 2px ridge #F6F6F6;
+    
+}
+.Foto_projeto{
+    width: 30vw;
+    height: 20vh;
+    object-fit: cover;
+    
+}
+.Foto_jogo{
+    width: 30vw;
+    height: 20vh;
+    object-fit: cover;
+    
+}
+
+.rodape {
+    padding: 20px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400
+}
+
+@media screen and (max-width:768px) {
+    .apresentacao__links {
+        flex-direction: row;
+        gap: 16px;
+    }
+    
+    .apresentacao__links__link {
+        width: 100%;
+    }                           
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+    .apresentacao {
+        flex-direction: column;
+        gap: 5%;
+    }
+    .cabecalho {
+        padding: 2% 0% 0% 5%;
+    }
+    .apresentacao__conteudo__titulo {
+        font-size: 24px;
+    }
+    .apresentacao__conteudo__texto {
+        font-size: 16px;
+    }
+    .cabecalho__menu {
+        gap: 40px;
+    }
+    .cabecalho__menu__link {
+        font-size: 16px;
+    }
+    .apresentacao__links__link {
+        font-size: 16px;
+    }
+    .sub_titulo {
+        font-size: 16px;
+    }
+    .rodape {
+        font-size: 16px;
+    }
+    
+    
+}
