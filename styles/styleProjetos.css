@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #112B3C;
+    --cor-secundaria: #F66B0E;
+    --cor-terciaria: #EFEFEF;
+    --cor-hover: #205375;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-hover);
+}
+
+.apresentacao {
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    background-color: var(--cor-hover);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projeto__descricao {
+    width: 50%;
+}
+
+.projeto__descricao h2 {
+    font-size: 2rem;
+    font-family: var(--font-secundaria);
+    margin-bottom: 10px;
+}
+
+.projeto__descricao p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.projeto__descricao a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projeto__descricao a:hover {
+    text-decoration: underline;
+}
+
+.projeto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.rodape {
+    padding: 20px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        padding: 5%;
+    }
+    .projeto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto__descricao {
+        width: 100%;
+        text-align: center;
+    }
+    .projeto img {
+        width: 80%;
+        max-width: 250px;
+    }
+}

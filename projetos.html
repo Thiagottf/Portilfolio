@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <link rel="stylesheet" href="./styles/syles_projetos.css">
-
+    <link rel="stylesheet" href="./styles/styleProjetos.css">
 </head>
 
 <body>
@@ -14,29 +13,37 @@
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="projetos.html">projetos</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
         </nav>
     </header>
+
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <div class="apresentacao__conteudo__projeto">
-            <h2 class="apresentacao__conteudo__titulo_projeto">Projetos academicos</strong></h2>
-            <section>
-                <img src="assents/Captura de tela 2023-09-11 073233.png" class = "Foto_projeto" alt="Foto do projeto academico de dashboard" >
-                
-            </section>
+        <div class="projeto">
+            <div class="projeto__descricao">
+                <h2>Dashboard de probabilidade e estatística sobre cyberataques</h2>
+                <p>O banco de dados utilizado para a montagem deste dashboard foi <a href="https://www.kaggle.com/datasets/rodrigoriboldi/incidentes-de-segurana-da-informao-no-brasil?resource=download" target="_blank">Incidentes de Segurança da Informação no Brasil</a>.</p>
+                <p>O dashboard tem como objetivo resumir os ataques cibernéticos que ocorreram no período de 2010 a 2019 no Brasil, mostrando a frequência e em que mês do ano eles ocorrem, podendo filtrar os ataques em: Worm, DOS, Invasão, Web, Scan, Fraude e Outros.</p>
+                <p>Link para o repositório no GitHub: <a href="https://github.com/Thiagottf/Dashboard" target="_blank">GitHub Repository</a>.</p>
             </div>
-            <div class="apresentacao__conteudo__jogos">
-            <h1 class="apresentacao__conteudo__texto">Jogos 2D</strong></h1>
-            <section>
-                <img src="assents/Captura de tela 2023-09-11 074410.png" class = "Foto_jogo" alt="Foto do projeto academico de dashboard" >
-            </section>
+            <div class="projeto__imagem">
+                <img src="assents/Captura de tela 2023-09-11 073233.png" alt="Projeto acadêmico de dashboard">
             </div>
-        </section>
+        </div>
+
+        <div class="projeto">
+            <div class="projeto__descricao">
+                <h2>Jogos 2D</h2>
+                <p>Descrição sobre o desenvolvimento de jogos 2D, as ferramentas utilizadas e desafios enfrentados.</p>
+            </div>
+            <div class="projeto__imagem">
+                <img src="assents/Captura de tela 2023-09-11 074410.png" alt="Jogo 2D desenvolvido">
+            </div>
+        </div>
     </main>
+
     <footer>
         <div class="rodape">
-            <p> By Thiagottf </p>
+            <p>By Thiagottf</p>
         </div>
     </footer>
 </body>
