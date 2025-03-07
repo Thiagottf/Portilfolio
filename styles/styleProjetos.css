@@ -67,6 +67,7 @@ body {
 .projeto__descricao h2 {
     font-size: 2rem;
     font-family: var(--font-secundaria);
+    color: var(--cor-secundaria);
     margin-bottom: 10px;
 }
 
